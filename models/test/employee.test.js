@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const Employee = require('./../employee.model.js');
 
 describe('Employee', () => {
-    after(() => {
+    /*after(() => {
         mongoose.models = {};
-    });
+    });*/
 
     it('should throw an error if no "firstName",  "lastName", "department" args', () => {
         const emp = new Employee({});
